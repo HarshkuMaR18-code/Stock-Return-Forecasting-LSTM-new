@@ -1,0 +1,123 @@
+[2026-07-07 11:04:42,855] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2026-07-07 11:04:43,118] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2026-07-07 11:04:43,118] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2026-07-07 11:04:43,118] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2026-07-07 11:04:43,118] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2026-07-07 11:04:43,520] pydot - DEBUG - pydot initializing
+[2026-07-07 11:04:43,520] pydot - DEBUG - pydot 4.0.1
+[2026-07-07 11:04:43,523] pydot.core - DEBUG - pydot core module initializing
+[2026-07-07 11:04:43,724] matplotlib - DEBUG - matplotlib data path: C:\Users\harsh\anaconda3\envs\stock\Lib\site-packages\matplotlib\mpl-data
+[2026-07-07 11:04:43,728] matplotlib - DEBUG - CONFIGDIR=C:\Users\harsh\.matplotlib
+[2026-07-07 11:04:43,729] matplotlib - DEBUG - interactive is False
+[2026-07-07 11:04:43,729] matplotlib - DEBUG - platform is win32
+[2026-07-07 11:04:43,750] matplotlib - DEBUG - CACHEDIR=C:\Users\harsh\.matplotlib
+[2026-07-07 11:04:43,753] matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\harsh\.matplotlib\fontlist-v3.11.0.json
+[2026-07-07 11:04:44,301] asyncio - DEBUG - Using proactor: IocpProactor
+[2026-07-07 11:05:24,285] yfinance - DEBUG - Entering download()
+[2026-07-07 11:05:24,285] yfinance - DEBUG - Disabling multithreading because DEBUG logging enabled
+[2026-07-07 11:05:24,286] yfinance - DEBUG -  Entering history()
+[2026-07-07 11:05:24,288] peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_tz_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+[2026-07-07 11:05:24,288] peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['TCS.NS', 1, 0])
+[2026-07-07 11:05:24,464] yfinance - DEBUG -   Entering history()
+[2026-07-07 11:05:24,464] yfinance - DEBUG - TCS.NS: Yahoo GET parameters: {'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:05:24,464] yfinance - DEBUG -    Entering get()
+[2026-07-07 11:05:24,464] yfinance - DEBUG -     Entering _make_request()
+[2026-07-07 11:05:24,464] yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/TCS.NS
+[2026-07-07 11:05:24,464] yfinance - DEBUG - params={'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:05:24,464] yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+[2026-07-07 11:05:24,464] yfinance - DEBUG - cookie_mode = 'basic'
+[2026-07-07 11:05:24,464] yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+[2026-07-07 11:05:24,464] yfinance - DEBUG -        Entering _get_cookie_basic()
+[2026-07-07 11:05:24,464] yfinance - DEBUG -         Entering _load_cookie_curlCffi()
+[2026-07-07 11:05:24,465] peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+[2026-07-07 11:05:24,465] peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+[2026-07-07 11:05:24,466] yfinance - DEBUG -         Exiting _load_cookie_curlCffi()
+[2026-07-07 11:05:24,466] yfinance - DEBUG - reusing persistent cookie
+[2026-07-07 11:05:24,466] yfinance - DEBUG -        Exiting _get_cookie_basic()
+[2026-07-07 11:05:24,466] yfinance - DEBUG -        Entering _get_crumb_basic()
+[2026-07-07 11:05:24,466] yfinance - DEBUG -         Entering _get_cookie_basic()
+[2026-07-07 11:05:24,466] yfinance - DEBUG - reusing cookie
+[2026-07-07 11:05:24,466] yfinance - DEBUG -         Exiting _get_cookie_basic()
+[2026-07-07 11:05:26,188] yfinance - DEBUG - crumb = 'e4XFeNrklYs'
+[2026-07-07 11:05:26,188] yfinance - DEBUG -        Exiting _get_crumb_basic()
+[2026-07-07 11:05:26,188] yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+[2026-07-07 11:05:26,188] yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+[2026-07-07 11:05:26,649] yfinance - DEBUG - response code=200
+[2026-07-07 11:05:26,649] yfinance - DEBUG -     Exiting _make_request()
+[2026-07-07 11:05:26,650] yfinance - DEBUG -    Exiting get()
+[2026-07-07 11:05:26,652] yfinance - DEBUG - TCS.NS: yfinance received OHLC data: 2026-01-13 03:45:00 -> 2026-07-07 03:45:00
+[2026-07-07 11:05:26,654] yfinance - DEBUG - TCS.NS: OHLC after cleaning: 2026-01-13 09:15:00+05:30 -> 2026-07-07 09:15:00+05:30
+[2026-07-07 11:05:26,663] yfinance - DEBUG - TCS.NS: OHLC after combining events: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:05:26,670] yfinance - DEBUG - TCS.NS: yfinance returning OHLC: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:05:26,670] yfinance - DEBUG -   Exiting history()
+[2026-07-07 11:05:26,670] yfinance - DEBUG -  Exiting history()
+[2026-07-07 11:05:26,671] yfinance - DEBUG - Exiting download()
+[2026-07-07 11:05:26,674] root - INFO - Loading model
+[2026-07-07 11:05:26,945] tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[2026-07-07 11:05:27,264] root - INFO - Predicted return for TCS.NS: 0.013430236838757992
+[2026-07-07 11:09:42,000] yfinance - DEBUG - Entering download()
+[2026-07-07 11:09:42,003] yfinance - DEBUG - Disabling multithreading because DEBUG logging enabled
+[2026-07-07 11:09:42,003] yfinance - DEBUG -  Entering history()
+[2026-07-07 11:09:42,003] peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['RELIANCE.NS', 1, 0])
+[2026-07-07 11:09:42,004] yfinance - DEBUG -   Entering history()
+[2026-07-07 11:09:42,004] yfinance - DEBUG - RELIANCE.NS: Yahoo GET parameters: {'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:09:42,004] yfinance - DEBUG -    Entering get()
+[2026-07-07 11:09:42,004] yfinance - DEBUG -     Entering _make_request()
+[2026-07-07 11:09:42,004] yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/RELIANCE.NS
+[2026-07-07 11:09:42,004] yfinance - DEBUG - params={'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:09:42,004] yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+[2026-07-07 11:09:42,004] yfinance - DEBUG - cookie_mode = 'basic'
+[2026-07-07 11:09:42,004] yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+[2026-07-07 11:09:42,004] yfinance - DEBUG -        Entering _get_cookie_basic()
+[2026-07-07 11:09:42,004] yfinance - DEBUG - reusing cookie
+[2026-07-07 11:09:42,004] yfinance - DEBUG -        Exiting _get_cookie_basic()
+[2026-07-07 11:09:42,004] yfinance - DEBUG -        Entering _get_crumb_basic()
+[2026-07-07 11:09:42,004] yfinance - DEBUG - reusing crumb
+[2026-07-07 11:09:42,004] yfinance - DEBUG -        Exiting _get_crumb_basic()
+[2026-07-07 11:09:42,004] yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+[2026-07-07 11:09:42,004] yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+[2026-07-07 11:09:43,151] yfinance - DEBUG - response code=200
+[2026-07-07 11:09:43,151] yfinance - DEBUG -     Exiting _make_request()
+[2026-07-07 11:09:43,151] yfinance - DEBUG -    Exiting get()
+[2026-07-07 11:09:43,153] yfinance - DEBUG - RELIANCE.NS: yfinance received OHLC data: 2026-01-13 03:45:00 -> 2026-07-07 03:45:00
+[2026-07-07 11:09:43,154] yfinance - DEBUG - RELIANCE.NS: OHLC after cleaning: 2026-01-13 09:15:00+05:30 -> 2026-07-07 09:15:00+05:30
+[2026-07-07 11:09:43,159] yfinance - DEBUG - RELIANCE.NS: OHLC after combining events: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:09:43,163] yfinance - DEBUG - RELIANCE.NS: yfinance returning OHLC: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:09:43,164] yfinance - DEBUG -   Exiting history()
+[2026-07-07 11:09:43,164] yfinance - DEBUG -  Exiting history()
+[2026-07-07 11:09:43,165] yfinance - DEBUG - Exiting download()
+[2026-07-07 11:09:43,167] root - INFO - Loading model
+[2026-07-07 11:09:43,430] root - INFO - Predicted return for RELIANCE.NS: 0.005399221554398537
+[2026-07-07 11:11:09,697] yfinance - DEBUG - Entering download()
+[2026-07-07 11:11:09,698] yfinance - DEBUG - Disabling multithreading because DEBUG logging enabled
+[2026-07-07 11:11:09,698] yfinance - DEBUG -  Entering history()
+[2026-07-07 11:11:09,699] peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['TCS.NS', 1, 0])
+[2026-07-07 11:11:09,699] yfinance - DEBUG -   Entering history()
+[2026-07-07 11:11:09,700] yfinance - DEBUG - TCS.NS: Yahoo GET parameters: {'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:11:09,700] yfinance - DEBUG -    Entering get()
+[2026-07-07 11:11:09,700] yfinance - DEBUG -     Entering _make_request()
+[2026-07-07 11:11:09,700] yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/TCS.NS
+[2026-07-07 11:11:09,700] yfinance - DEBUG - params={'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:11:09,700] yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+[2026-07-07 11:11:09,700] yfinance - DEBUG - cookie_mode = 'basic'
+[2026-07-07 11:11:09,700] yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+[2026-07-07 11:11:09,700] yfinance - DEBUG -        Entering _get_cookie_basic()
+[2026-07-07 11:11:09,700] yfinance - DEBUG - reusing cookie
+[2026-07-07 11:11:09,700] yfinance - DEBUG -        Exiting _get_cookie_basic()
+[2026-07-07 11:11:09,700] yfinance - DEBUG -        Entering _get_crumb_basic()
+[2026-07-07 11:11:09,700] yfinance - DEBUG - reusing crumb
+[2026-07-07 11:11:09,700] yfinance - DEBUG -        Exiting _get_crumb_basic()
+[2026-07-07 11:11:09,700] yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+[2026-07-07 11:11:09,700] yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+[2026-07-07 11:11:10,394] yfinance - DEBUG - response code=200
+[2026-07-07 11:11:10,394] yfinance - DEBUG -     Exiting _make_request()
+[2026-07-07 11:11:10,394] yfinance - DEBUG -    Exiting get()
+[2026-07-07 11:11:10,395] yfinance - DEBUG - TCS.NS: yfinance received OHLC data: 2026-01-13 03:45:00 -> 2026-07-07 03:45:00
+[2026-07-07 11:11:10,396] yfinance - DEBUG - TCS.NS: OHLC after cleaning: 2026-01-13 09:15:00+05:30 -> 2026-07-07 09:15:00+05:30
+[2026-07-07 11:11:10,404] yfinance - DEBUG - TCS.NS: OHLC after combining events: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:11:10,409] yfinance - DEBUG - TCS.NS: yfinance returning OHLC: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:11:10,410] yfinance - DEBUG -   Exiting history()
+[2026-07-07 11:11:10,410] yfinance - DEBUG -  Exiting history()
+[2026-07-07 11:11:10,411] yfinance - DEBUG - Exiting download()
+[2026-07-07 11:11:10,412] root - INFO - Loading model
+[2026-07-07 11:11:10,689] root - INFO - Predicted return for TCS.NS: 0.013430554419755936

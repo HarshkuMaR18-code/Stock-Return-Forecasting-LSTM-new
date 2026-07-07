@@ -1,0 +1,21 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow
+yfinance
+ 
+boto3
+mypy-boto3-s3
+ 
+PyYAML
+pandas
+dill
+ 
+fastapi
+uvicorn[standard]
+pydantic
+ 
+from-root
+ 
+-e .

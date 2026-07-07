@@ -1,0 +1,12 @@
+.git
+.github
+.gitignore
+README.md
+artifact
+logs
+notebook
+*.pyc
+__pycache__
+.env
+.venv
+venv

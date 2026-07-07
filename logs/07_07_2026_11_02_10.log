@@ -1,0 +1,42 @@
+[2026-07-07 11:02:10,210] yfinance - DEBUG - Entering download()
+[2026-07-07 11:02:10,210] yfinance - DEBUG - Disabling multithreading because DEBUG logging enabled
+[2026-07-07 11:02:10,211] yfinance - DEBUG -  Entering history()
+[2026-07-07 11:02:10,212] peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_tz_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+[2026-07-07 11:02:10,212] peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['RELIANCE.NS', 1, 0])
+[2026-07-07 11:02:10,390] yfinance - DEBUG -   Entering history()
+[2026-07-07 11:02:10,391] yfinance - DEBUG - RELIANCE.NS: Yahoo GET parameters: {'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:02:10,391] yfinance - DEBUG -    Entering get()
+[2026-07-07 11:02:10,391] yfinance - DEBUG -     Entering _make_request()
+[2026-07-07 11:02:10,391] yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/RELIANCE.NS
+[2026-07-07 11:02:10,391] yfinance - DEBUG - params={'range': '120d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+[2026-07-07 11:02:10,391] yfinance - DEBUG -      Entering _get_cookie_and_crumb()
+[2026-07-07 11:02:10,391] yfinance - DEBUG - cookie_mode = 'basic'
+[2026-07-07 11:02:10,391] yfinance - DEBUG -       Entering _get_cookie_and_crumb_basic()
+[2026-07-07 11:02:10,391] yfinance - DEBUG -        Entering _get_cookie_basic()
+[2026-07-07 11:02:10,391] yfinance - DEBUG -         Entering _load_cookie_curlCffi()
+[2026-07-07 11:02:10,392] peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+[2026-07-07 11:02:10,392] peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+[2026-07-07 11:02:10,392] yfinance - DEBUG -         Exiting _load_cookie_curlCffi()
+[2026-07-07 11:02:10,392] yfinance - DEBUG - reusing persistent cookie
+[2026-07-07 11:02:10,392] yfinance - DEBUG -        Exiting _get_cookie_basic()
+[2026-07-07 11:02:10,392] yfinance - DEBUG -        Entering _get_crumb_basic()
+[2026-07-07 11:02:10,392] yfinance - DEBUG -         Entering _get_cookie_basic()
+[2026-07-07 11:02:10,392] yfinance - DEBUG - reusing cookie
+[2026-07-07 11:02:10,393] yfinance - DEBUG -         Exiting _get_cookie_basic()
+[2026-07-07 11:02:11,128] yfinance - DEBUG - crumb = 'e4XFeNrklYs'
+[2026-07-07 11:02:11,128] yfinance - DEBUG -        Exiting _get_crumb_basic()
+[2026-07-07 11:02:11,128] yfinance - DEBUG -       Exiting _get_cookie_and_crumb_basic()
+[2026-07-07 11:02:11,128] yfinance - DEBUG -      Exiting _get_cookie_and_crumb()
+[2026-07-07 11:02:12,206] yfinance - DEBUG - response code=200
+[2026-07-07 11:02:12,206] yfinance - DEBUG -     Exiting _make_request()
+[2026-07-07 11:02:12,207] yfinance - DEBUG -    Exiting get()
+[2026-07-07 11:02:12,208] yfinance - DEBUG - RELIANCE.NS: yfinance received OHLC data: 2026-01-13 03:45:00 -> 2026-07-07 03:45:00
+[2026-07-07 11:02:12,211] yfinance - DEBUG - RELIANCE.NS: OHLC after cleaning: 2026-01-13 09:15:00+05:30 -> 2026-07-07 09:15:00+05:30
+[2026-07-07 11:02:12,215] yfinance - DEBUG - RELIANCE.NS: OHLC after combining events: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:02:12,218] yfinance - DEBUG - RELIANCE.NS: yfinance returning OHLC: 2026-01-13 00:00:00+05:30 -> 2026-07-07 00:00:00+05:30
+[2026-07-07 11:02:12,219] yfinance - DEBUG -   Exiting history()
+[2026-07-07 11:02:12,219] yfinance - DEBUG -  Exiting history()
+[2026-07-07 11:02:12,220] yfinance - DEBUG - Exiting download()
+[2026-07-07 11:02:12,231] root - INFO - Loading model
+[2026-07-07 11:02:12,314] tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[2026-07-07 11:02:12,582] root - INFO - Predicted return for RELIANCE.NS: 0.0053988490253686905

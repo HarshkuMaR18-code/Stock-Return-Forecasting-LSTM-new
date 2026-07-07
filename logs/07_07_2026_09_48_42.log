@@ -1,0 +1,14 @@
+[2026-07-07 09:48:45,235] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[2026-07-07 09:48:45,613] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2026-07-07 09:48:45,614] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2026-07-07 09:48:45,614] h5py._conv - DEBUG - Creating converter from 7 to 5
+[2026-07-07 09:48:45,614] h5py._conv - DEBUG - Creating converter from 5 to 7
+[2026-07-07 09:48:46,231] pydot - DEBUG - pydot initializing
+[2026-07-07 09:48:46,231] pydot - DEBUG - pydot 4.0.1
+[2026-07-07 09:48:46,234] pydot.core - DEBUG - pydot core module initializing
+[2026-07-07 09:48:46,507] matplotlib - DEBUG - matplotlib data path: C:\Users\harsh\anaconda3\envs\stock\Lib\site-packages\matplotlib\mpl-data
+[2026-07-07 09:48:46,512] matplotlib - DEBUG - CONFIGDIR=C:\Users\harsh\.matplotlib
+[2026-07-07 09:48:46,513] matplotlib - DEBUG - interactive is False
+[2026-07-07 09:48:46,513] matplotlib - DEBUG - platform is win32
+[2026-07-07 09:48:46,542] matplotlib - DEBUG - CACHEDIR=C:\Users\harsh\.matplotlib
+[2026-07-07 09:48:46,552] matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\harsh\.matplotlib\fontlist-v3.11.0.json
