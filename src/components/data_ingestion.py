@@ -28,7 +28,10 @@ class DataIngestion:
                 progress=False,
                 auto_adjust=True,
             )
-            df = df.stack(level="Ticker", future_stack=True).reset_index()
+            try:
+                df = df.stack(level="Ticker", future_stack=True).reset_index()
+            except TypeError:
+                df = df.stack(level="Ticker").reset_index()
             df.rename(columns={"Ticker": "ticker", "Date": "date"}, inplace=True)
             df["ticker_id"] = df["ticker"].map(TICKER_TO_ID)
             df.sort_values(["ticker", "date"], inplace=True)
@@ -36,7 +39,7 @@ class DataIngestion:
             logging.info(f"Data Shape: {df.shape}")
             return df
         except Exception as e:
-            raise MyException(e, sys)
+            raise MyException(e, sys) from e
 
     def run(self) -> tuple[str, str]:
         try:
@@ -47,9 +50,10 @@ class DataIngestion:
             train, test = train_test_split(
                 df, test_size=TRAIN_TEST_SPLIT_RATIO, shuffle=False
             )
+            os.makedirs(os.path.dirname(TRAIN_PATH), exist_ok=True)
             train.to_csv(TRAIN_PATH, index=False)
             test.to_csv(TEST_PATH, index=False)
             logging.info("Train and test data saved")
             return TRAIN_PATH, TEST_PATH
         except Exception as e:
-            raise MyException(e, sys)
+            raise MyException(e, sys) from e

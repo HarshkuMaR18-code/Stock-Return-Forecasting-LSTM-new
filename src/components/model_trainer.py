@@ -137,4 +137,4 @@ class ModelTrainer:
             return MODEL_PATH, mae
 
         except Exception as e:
-            raise MyException(e, sys)
+            raise MyException(e, sys) from e

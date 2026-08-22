@@ -1,0 +1,4 @@
+[2026-08-20 23:27:28,731] httpx - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+[2026-08-20 23:27:31,745] root - INFO - Loading model
+[2026-08-20 23:27:32,373] root - INFO - Predicted return for RELIANCE.NS: 0.0056120967492461205
+[2026-08-20 23:27:32,387] httpx - INFO - HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"

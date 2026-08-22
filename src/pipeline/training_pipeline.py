@@ -37,13 +37,9 @@ class TrainPipeline:
             logging.info("Training pipeline completed successfully")
 
         except Exception as e:
-            raise MyException(e, sys)
-        
-        
-if __name__ == "__main__":
-    print("Pipeline Started...")
+            raise MyException(e, sys) from e
 
+
+if __name__ == "__main__":
     obj = TrainPipeline()
     obj.run_pipeline()
-
-    print("Pipeline Finished...")

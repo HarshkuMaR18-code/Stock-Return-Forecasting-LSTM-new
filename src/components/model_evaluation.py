@@ -24,4 +24,4 @@ class ModelEvaluation:
             return is_accepted
 
         except Exception as e:
-            raise MyException(e, sys)
+            raise MyException(e, sys) from e

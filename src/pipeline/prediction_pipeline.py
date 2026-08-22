@@ -33,7 +33,7 @@ class StockDataClassifier:
     @staticmethod
     def add_technical_features(df: pd.DataFrame) -> pd.DataFrame:
         df = df.copy()
-        df["return_1d"] = df["Close"].pct_change()
+        df["return_1d"] = df["Close"].pct_change(fill_method=None)
         df["ma_7"] = df["Close"].rolling(7).mean()
         df["ma_21"] = df["Close"].rolling(21).mean()
         df["volatility_7"] = df["return_1d"].rolling(7).std()
@@ -51,7 +51,7 @@ class StockDataClassifier:
             df = self.add_technical_features(df)
 
             if len(df) < SEQUENCE_WINDOW_SIZE:
-                raise Exception(
+                raise ValueError(
                     f"Need at least {SEQUENCE_WINDOW_SIZE} rows, got {len(df)}."
                 )
 
@@ -75,5 +75,5 @@ class StockDataClassifier:
             return predicted_return
 
         except Exception as e:
-            raise MyException(e, sys)
+            raise MyException(e, sys) from e
         
